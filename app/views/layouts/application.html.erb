@@ -7,6 +7,21 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+   <% if flash[:notice] %>
+      <div class="notification is-primary global-notification">
+         <p class="notice">
+            <%= notice %>
+         </p>
+      </div>
+   <% end %>
+
+   <% if flash[:alter] %>
+      <div class="notification is-danger global-notification">
+         <p class="alter">
+            <%= alter %>
+         </p>
+      </div>
+   <% end %>
 
 <%= yield %>
 

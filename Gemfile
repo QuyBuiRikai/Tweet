@@ -32,6 +32,18 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'better_errors', '~> 2.4'
+
+gem 'guard', '~> 2.16'
+
+gem 'bulma-rails', '~> 0.8.0'
+
+gem 'simple_form', '~> 3.5'
+
+gem 'gravatar_image_tag', '~> 1.2'
+
+gem 'devise', '~> 4.7'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
@@ -43,5 +55,6 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+  gem 'guard-livereload', '~> 2.5', require: false
 end
 
