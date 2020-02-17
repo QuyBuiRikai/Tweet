@@ -3,6 +3,9 @@
 <head>
   <title>Twitter</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  
+  
+  <%= stylesheet_link_tag "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
@@ -22,6 +25,33 @@
          </p>
       </div>
    <% end %>
+
+
+   <div class="hero-head">
+      <nav class="navbar is-info">
+        <div class="container">
+          <div class="navbar-brand">
+            <%= link_to root_path, class: "navbar-item" do %>
+               <h1 class="title is-5">Twitter</h1>
+            <%end%>
+            
+            <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <div id="navbarMenuHeroA" class="navbar-menu">
+            <div class="navbar-end">
+              <%= link_to "Create New Post", new_tweeet_path, class:"navbar-item" %>
+            </div>
+            <div class="navbar-end">
+              <%= link_to "Sign Up", root_path, class:"navbar-item" %>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
 
 <%= yield %>
 
