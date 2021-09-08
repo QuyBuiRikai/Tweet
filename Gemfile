@@ -32,7 +32,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'better_errors', '~> 2.4'
+gem 'better_errors', '~> 2.8'
 
 gem 'guard', '~> 2.16'
 
